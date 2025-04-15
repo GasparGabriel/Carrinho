@@ -56,9 +56,8 @@
     </div>
   </main>
 
-  <audio controls>
-    <source src="audio/Nossa Loja Online.mp3" type="audio/mpeg">
-    
+  <audio id="myAudio" autoplay>
+    <source src="audio/Nossa Loja Online.mp3" type="audio/mp3">
 </audio>
 
 <!-- Carrinho abaixo dos produtos -->
@@ -68,6 +67,15 @@
     <p>Total: R$ <span id="cart-total">0.00</span></p>
     <button onclick="esvaziarCarrinho()">Esvaziar Carrinho</button>
   </section>
+
+  <script>
+    window.addEventListener('load', function() {
+        var audio = document.getElementById('myAudio');
+        audio.play().catch(function(error) {
+            console.log('Autoplay was prevented:', error);
+        });
+    });
+</script>
 
   <script src="js/script.js"></script>
 </body>
