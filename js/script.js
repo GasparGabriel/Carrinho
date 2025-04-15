@@ -50,3 +50,4 @@ function toggleCart() {
 
 // Inicializa ao carregar a página
 saveAndRenderCart();
+

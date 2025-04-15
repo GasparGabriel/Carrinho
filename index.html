@@ -54,19 +54,39 @@
       <p>R$ 299.90</p>
       <button onclick="addToCart(6, 'Controle', 299.90)">Adicionar ao carrinho</button>
     </div>
+
+    <div class="card">
+      <img src="imagens/TV.webp" alt="TV">
+      <h2>TV</h2>
+      <p>R$ 1990.90</p>
+      <button onclick="addToCart(7, 'TV', 1990.90)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="card">
+      <img src="imagens/monitor.avif" alt="Controle">
+      <h2>Monitor</h2>
+      <p>R$ 799.90</p>
+      <button onclick="addToCart(8, 'Monitor', 799.90)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="card">
+      <img src="imagens/Processador.webp" alt="Controle">
+      <h2>Processador</h2>
+      <p>R$ 2299.90</p>
+      <button onclick="addToCart(9, 'Processador', 2299.90)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="card">
+      <img src="imagens/PlacaVideo.jfif" alt="Controle">
+      <h2>Placa de Video</h2>
+      <p>R$ 1599.90</p>
+      <button onclick="addToCart(10, 'Placa de Video', 1599.90)">Adicionar ao carrinho</button>
+    </div>
   </main>
 
   <audio id="myAudio" autoplay>
     <source src="audio/Nossa Loja Online.mp3" type="audio/mp3">
 </audio>
-
-<!-- Carrinho abaixo dos produtos -->
-<section id="carrinho" class="carrinho">
-    <h2>Seu Carrinho</h2>
-    <ul id="cart-items"></ul>
-    <p>Total: R$ <span id="cart-total">0.00</span></p>
-    <button onclick="esvaziarCarrinho()">Esvaziar Carrinho</button>
-  </section>
 
   <script>
     window.addEventListener('load', function() {
@@ -76,6 +96,13 @@
         });
     });
 </script>
+
+<aside id="carrinho" class="carrinho">
+  <h2>Seu Carrinho</h2>
+  <ul id="cart-items"></ul>
+  <p>Total: R$ <span id="cart-total">0.00</span></p>
+  <button onclick="esvaziarCarrinho()">Esvaziar Carrinho</button>
+</aside>
 
   <script src="js/script.js"></script>
 </body>
