@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja de Eletrônicos Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Loja de Eletrônicos Online</h1>
+  </header>
+
+  <main class="products">
+    <div class="card">
+      <img src="imagens/celular.png" alt="Celular">
+      <h2>Celular</h2>
+      <p>R$ 999.90</p>
+      <button onclick="addToCart(1, 'Celular', 999.90)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="card">
+      <img src="imagens/notbook.png" alt="Computador">
+      <h2>Computador</h2>
+      <p>R$ 5999.90</p>
+      <button onclick="addToCart(2, 'Computador', 5999.90)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="card">
+      <img src="imagens/Mouse.png" alt="Mouse">
+      <h2>Mouse</h2>
+      <p>R$ 399.90</p>
+      <button onclick="addToCart(3, 'Mouse', 399.90)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="card">
+      <img src="imagens/teclado.png" alt="Teclado">
+      <h2>Teclado</h2>
+      <p>R$ 590.90</p>
+      <button onclick="addToCart(4, 'Teclado', 590.90)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="card">
+      <img src="imagens/headshet.png" alt="Headset">
+      <h2>Headset</h2>
+      <p>R$ 290.90</p>
+      <button onclick="addToCart(5, 'Headset', 290.90)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="card">
+      <img src="imagens/contorle.webp" alt="Controle">
+      <h2>Controle</h2>
+      <p>R$ 299.90</p>
+      <button onclick="addToCart(6, 'Controle', 299.90)">Adicionar ao carrinho</button>
+    </div>
+  </main>
+
+  <audio controls>
+    <source src="audio/Nossa Loja Online.mp3" type="audio/mpeg">
+    
+</audio>
+
+<!-- Carrinho abaixo dos produtos -->
+<section id="carrinho" class="carrinho">
+    <h2>Seu Carrinho</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: R$ <span id="cart-total">0.00</span></p>
+    <button onclick="esvaziarCarrinho()">Esvaziar Carrinho</button>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
